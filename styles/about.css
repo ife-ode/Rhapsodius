@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:system-ui;
+    
+   
+}
+
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    text-align: center; 
+    color: rgb(240, 239, 235);
+    background-image: url("../images/Headshot(1).jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: black;
+
+   
+
+}
+.context {
+    position: absolute;
+    opacity: .9;
+}
+.writeUp p{
+    padding-left: 100px;
+    opacity: .5;
+    text-align: right;
+    position: fixed; 
+}
+
+
+@media  (min-width: 480px){
+
+    .context {
+       
+        top: 375px;
+        font-size: 7.5vw;
+        right: 80px;
+       
+    }
+    
+    .writeUp p{
+       
+        font-size: 2.3vw; 
+     
+        right: 50px;
+        margin-right: 170px;
+        top: 30px;
+       
+    }
+
+}
+
+
+@media (min-width: 760px){
+
+    .context {
+       
+        top: 420px;
+        font-size: 5.5vw;
+        right: 80px;
+       
+       
+        
+    }
+    
+    .writeUp p{
+        font-size: 1.6vw; 
+        right: 250px;
+        margin-right: 100px;
+        top: 220px;
+       
+       
+    }
+
+    
+
+    
+
+
+}
+
+@media (min-width: 1260px){
+
+    .context {
+        top: 370px;
+        font-size: 4vw;
+        right: 240px;
+      
+       
+        
+    }
+    
+    .writeUp p{
+        font-size: 1vw; 
+        right: -10px;
+        margin-right: 800px;
+        top: 210px;
+   
+       
+       
+    }
+
+    
+
+    
+
+
+}
+    
+
+
+
+   

@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:system-ui;
+   
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    text-align: center; 
+    font-style: oblique;
+
+   
+    
+}
+
+
+
+.container::after{
+    content: '';
+    position: fixed;
+    z-index: -1;
+    inset: 0;
+    opacity: 1;
+    background-color: #011427;
+    background-position: center;
+    background-image: url("../images/ActionShot.png");
+    background-size: 1800px;
+    background-repeat: no-repeat;
+    
+}
+
+.paragraph p{
+    font-size: 1.2vw;
+    text-align: left;
+    position: absolute;
+    color: rgb(255, 244, 244);
+ 
+}
+
+.title{
+    font-size: 5vw;
+    text-align: left;
+    overflow: hidden;
+    position: fixed;
+    color: rgb(244, 218, 218);
+    
+    margin-right: 780px;
+    margin-bottom: 50px;
+
+}
+
+.bar1{
+    border-left: 2px solid rgb(255, 244, 244);
+    height: 500px;
+    padding-bottom: 30px;
+    position: fixed;
+    padding-right: 0px;
+
+
+}
+
+@media  (min-width: 480px){
+
+    .paragraph p{
+        position: relative;
+        color: rgb(244, 218, 218);
+        font-size: 3vw;
+        text-align: left;
+        top: 100vh;
+        padding-left: 7vw;
+        padding-right: 10vw;
+        padding-bottom: 30px;
+
+
+        
+    }
+    .title{
+        margin-right: 250px;
+        top: 60vh;
+        padding-left: 7vw;
+        position: absolute;
+        font-style:normal;
+    }
+
+    .bar1{
+        border-left: 0px solid rgb(244, 218, 218);
+        
+    }
+}
+@media  (min-width: 760px){
+
+    .paragraph p{
+        position: relative;
+        color: rgb(244, 218, 218);
+        font-size: 2.2vw;
+        text-align: left;
+        top: 900px;
+        padding-left: 50px;
+        padding-right: 100px;
+        padding-bottom: 100px;
+
+
+        
+    }
+    .title{
+        margin-right: 390px;
+        top: 490px;
+        padding-left: 0px;
+        position: absolute;
+        font-style:normal;
+    }
+
+    .bar1{
+        border-left: 0px solid  rgb(244, 218, 218);
+        
+    }
+}
+
+@media (min-width: 1280px){
+    
+   
+    .paragraph p{
+    font-size: 1.5vw;
+    text-align: left;
+    position: absolute;
+    top:600px;
+    color:   rgb(244, 218, 218);
+     
+    }
+    
+    .title{
+    font-size: 6vw;
+    overflow: hidden;
+    position: fixed;
+    color:   rgb(244, 218, 218);
+    right: 400px;
+    top: 350px;
+    padding-left: 100px;
+    }
+    .bar1{
+    border-left: 2px solid  rgb(244, 218, 218);
+    margin-right: 0px;
+
+    }
+    
+}

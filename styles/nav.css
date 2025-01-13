@@ -1,0 +1,43 @@
+/*Navigation Bar*/
+.iconi  {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: #fefefe;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .dropdown_menu{
+    position: fixed;
+    right: 3%;
+    top: 60px;
+    width: 170px;
+    display: none;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    border-radius: 20px;
+     z-index: 1;
+    
+  }
+  .dropdown_menu li{
+    list-style: none;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .dropdown_menu li a{
+    color: #fefefe;
+    text-decoration: none;
+   
+  }
+  .dropdown_menu li a:hover{
+    color: rgb(168, 198, 238);
+    
+  }
+  
+  
+  
