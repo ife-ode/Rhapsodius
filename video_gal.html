@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv "X-UA-Compatible" content = "IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet"> 
+    
+    
+    <link rel = "stylesheet" href = "styles/video_gal.css">
+    <link rel = "stylesheet" href = "styles/nav.css">
+    
+    
+    
+    <title>Video Player</title>
+  
+</head>
+
+<body>
+   
+    
+    <div id = "navBar">
+        <span title = "A menu button for navigation" class = "iconi">
+            <i class = "material-icons menuBtn" style="font-size:36px"> menu </i>
+        </span>   
+    
+        <div class = "dropdown_menu">
+            <li  title = "Home"><a href="index.html" class = "active">Home</a></li>
+            <li  title = "A Brief History"><a href="brief_history.html">Brief History</a></li>
+            <li  title = "A longer history"><a href="big_pic.html">Big Picture</a></li>
+            <li  title = "A Video Gallary"><a href="video_gal.html">Video Gallary</a></li>
+            <li  title = "Concerts"><a href = "https://aftontickets.com/event/buyticket/7pj6n01k9r/an-evening-with-rhapsodius-andrew-craig" target ="blank">Concerts</a></li>
+            <li  title = "Livestreams"><a href = "https://aftontickets.com/event/buybroadcastticket/38jyew4x71" target ="blank" >Livestreams</a></li>
+            <li  title = "Bandcamp"><a href = "https://dreadlockfunkybro.bandcamp.com/track/home" target ="blank">Band Camp</a></li>
+        </div> 
+    </div>
+
+    <section>
+       
+       
+
+        
+        <div class = "container">
+            
+        
+            
+            <div title = "Video" id = "video_player">
+               
+                <video src = "videos/video3.mp4"  id = "main-video" autoplay></video>
+                
+                <div title = "Progress of Video" class = "progressAreaTime"></div>
+                
+                <div class = "controls">
+                    
+                    <div class ="progress-area">
+                        <div title = "Progress Bar" class="progress-bar">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="controls-list">
+                       
+                        <div class="controls-left">
+                            <span class = "icon">
+                                <i title = "Go back 10 seconds" class="material-icons fast-rewind"> replay_10 </i>
+                            </span>
+                            <span class = "icon">
+                                <i title = "Pause/Play Video" class="material-icons play_pause"> pause </i>
+                            </span>
+                            <span class = "icon">
+                                <i title = "Go forward 10 seconds" class="material-icons fast-forward"> forward_10 </i>
+                            </span>
+                            <span class = "icon">
+                                <i title = "Change Volume" class="material-icons volume"> volume_up </i>
+                                <input title = "Scroll bar to change Volume" type = "range" min = "0" max = "100" class = "volume_range">
+                            </span>
+                            <div class="timer">
+                                <span title = "Video Timer" class="current">0:00</span> / <span class = duration>0:00</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="controls-right">
+                           <span class = "icon">
+                               <i title = "Settings" class="material-icons settingsBtn"> settings </i>
+                           </span>
+                           <span class = "icon">
+                               <i title = "Change tabs and still play video" class="material-icons picture_in_picture"> picture_in_picture_alt </i>
+                           </span>
+                           <span class = "icon">
+                               <i title = "Fullscreen" class="material-icons fullscreen"> fullscreen </i>
+                           </span>
+                       </div>
+
+                    </div>  
+
+                </div>
+                
+                <div id="settings">
+                    <div title = "The speed of the video"class="playback">
+                        <span>PlayBack Speed</span>
+                        <ul>
+                            <li title = "0.25 speed" data-speed = "0.25" > 0.25</li>
+                            <li title = "0.50 speed" data-speed = "0.50"> 0.50</li>
+                            <li title = "0.75 speed" data-speed = "0.75"> 0.75</li>
+                            <li title = "Normal speed" data-speed = "1" class = "active"> Normal</li>
+                            <li title = "1.25 speed" data-speed = "1.25"> 1.25</li>
+                            <li title = "1.50 speed" data-speed = "1.50"> 1.50</li>
+                            <li title = "1.75 speed" data-speed = "1.75"> 1.75</li>
+                            <li title = "2.05 speed" data-speed = "2.00"> 2.00</li>
+                        </ul>
+                    </div>
+                </div> 
+
+               
+            </div>
+
+            <div title = "The title of the video" class = "caption">
+                Joshua Fit the Battle of Jericho
+            </div>
+            <div class = "navigation">
+                <ul >
+                    <li class = active title = "Joshua Fit the Battle of Jericho"  src = videos/video3.mp4><img src = "images/video3.png"></li>
+                    <li title = "Is This Love" src = videos/video1.mp4 ><img src = "images/ActionShot.png"></li>
+                    <li title = "Deep River" src = videos/video2.mp4><img src = "images/video2.png"></li>
+                    <li title = "Trio @ Rose Theatre" src = videos/video4.mp4><img src = "images/video4.png"></li>
+                    <li title = "Hole In the Bucket" src = videos/video5.mp4><img src = "images/video5.png"></li>
+                    <li title = "Home solo piano version" src = videos/video6.mp4><img src = "images/video6.png"></li>
+                    <li title = "Hymn To Freedom" src = videos/video7.mp4><img src = "images/video7.png"></li>
+                    <li title = "United We Play - Pan Am Overture premiere performance" src = videos/video8.mp4><img src = "images/video8.png"></li>    
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+</body>
+<script src = "js/video_gal.js"> </script>
+<script src = "js/nav.js"> </script>
+</html>
